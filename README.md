@@ -6,7 +6,7 @@
 2. 用SSH客户端连接上VPS，输入以下命令（若不是root用户请先`sudo -i`提权）
 
 ```shell
-wget -N --no-check-certificate https://raw.githubusercontents.com/facerleo/vps-tool/blob/main/MisakaToolbox.sh && bash MisakaToolbox.sh
+wget -N --no-check-certificate https://raw.githubusercontents.com/facerleo/vps-tool/main/MisakaToolbox.sh && bash MisakaToolbox.sh
 ```
 
 第一次运行以后，可用快捷方式启动
