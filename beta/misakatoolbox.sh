@@ -161,7 +161,7 @@ bbr_script(){
         wget -N --no-check-certificate "https://raw.githubusercontents.com/chiakge/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
     elif [ ${virt} == "openvz" ]; then
         if [[ ! $TUN =~ 'in bad state' ]] && [[ ! $TUN =~ '处于错误状态' ]] && [[ ! $TUN =~ 'Die Dateizugriffsnummer ist in schlechter Verfassung' ]]; then
-            wget -N --no-check-certificate https://raw.githubusercontents.com/Misaka-blog/tun-script/master/tun.sh && bash tun.sh
+            wget -N --no-check-certificate https://raw.githubusercontent.com/facerleo/tun-script/master/tun.sh && bash tun.sh
         else
             wget -N --no-check-certificate https://raw.githubusercontents.com/mzz2017/lkl-haproxy/master/lkl-haproxy.sh && bash lkl-haproxy.sh
         fi
@@ -194,7 +194,7 @@ warp_script(){
     echo ""
     read -rp "请输入选项:" warpNumberInput
 	case $warpNumberInput in
-        1) wget -N https://raw.githubusercontents.com/Misaka-blog/Misaka-WARP-Script/master/misakawarp.sh && bash misakawarp.sh ;;
+        1) wget -N https://raw.githubusercontent.com/facerleo/Misaka-WARP-Script/master/misakawarp.sh && bash misakawarp.sh ;;
         2) wget -N https://raw.githubusercontents.com/fscarmen/warp/main/menu.sh && bash menu.sh ;;
         3) wget -N https://raw.githubusercontents.com/fscarmen/warp/main/docker.sh && bash docker.sh ;;
         4) bash <(curl -sSL https://raw.githubusercontents.com/fscarmen/warp_unlock/main/unlock.sh) ;;
@@ -244,7 +244,7 @@ xui() {
     read -rp "请输入选项:" xuiNumberInput
     case "$xuiNumberInput" in
         1) bash <(curl -Ls https://raw.githubusercontents.com/vaxilu/x-ui/master/install.sh) ;;
-        2) wget -N --no-check-certificate https://raw.githubusercontents.com/Misaka-blog/x-ui/master/install.sh && bash install.sh ;;
+        2) wget -N --no-check-certificate https://raw.githubusercontent.com/facerleo/x-ui/master/install.sh && bash install.sh ;;
         3) bash <(curl -Ls https://raw.githubusercontents.com/FranzKafkaYu/x-ui/master/install.sh) ;;
         0) menu ;;
     esac
@@ -380,7 +380,7 @@ menu1(){
         10) wget -N --no-check-certificate https://raw.githubusercontents.com/Misaka-blog/Ngrok-1key/master/ngrok.sh && bash ngrok.sh ;;
         11) bash <(curl -sSL https://cdn.jsdelivr.net/gh/SuperManito/LinuxMirrors@main/ChangeMirrors.sh) ;;
         12) setChinese ;;
-        13) wget -N --no-check-certificate https://raw.githubusercontents.com/Misaka-blog/tun-script/master/tun.sh && bash tun.sh ;;
+        13) wget -N --no-check-certificate https://raw.githubusercontent.com/facerleo/tun-script/master/tun.sh && bash tun.sh ;;
         *) exit 1 ;;
     esac
 }
